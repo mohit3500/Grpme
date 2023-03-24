@@ -1,0 +1,15 @@
+.header {
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #f6f6f6;
+  font-size: 18px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+.logo {
+  width: 2.5rem;
+  aspect-ratio: 1;
+}

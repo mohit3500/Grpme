@@ -1,0 +1,49 @@
+.mobilenavbar {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .mobilenavbar {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+  }
+  .close {
+    color: black;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+  }
+  .hamburger {
+    color: #345c7c;
+  }
+  .hamburger,
+  .close {
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .mobilenavbar ul {
+    flex-direction: column;
+
+    background-color: rgba(151, 151, 151, 0.25);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+  }
+  .mobilenavbar ul li a {
+    font-size: 1.5rem;
+    color: rgb(70, 70, 70);
+    font-weight: 800;
+  }
+  .mobilenavbar ul li a:hover {
+    color: rgb(14, 14, 13);
+    transform: scale(1.05);
+  }
+}
